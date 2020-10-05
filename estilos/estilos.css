@@ -1,0 +1,67 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* @keyframes es la palabra reservada
+MiAnimacion es el nombre q yo asigno */
+@keyframes miAnimacion{
+0%{opacity: 1;}
+20%{opacity: 1;}
+30%{opacity: 0;}
+90%{opacity: 0;}
+100%{opacity: 1;}
+}
+
+#foto1{
+   position: relative;
+   margin: auto;
+   width: 250px;  
+   height: 250px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/1.jpg'); 
+   /* height: 100vh; */
+   animation: miAnimacion 24s 18s infinite;
+}
+#foto2{
+   position: relative;
+   margin: auto;
+   width: 250px;   
+   height: 250px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/2.jpg'); 
+   /* height: 100vh; */
+   animation: miAnimacion 24s 12s infinite;
+}
+#foto3{
+   position: relative;
+   margin: auto;
+   width: 250px;   
+   height: 250px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/3.jpg'); 
+   /* height: 100vh; */
+   animation: miAnimacion 24s 6s infinite;   
+}
+#foto4{
+   position: relative;
+   margin: auto;
+   width: 250px;
+   height: 250px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/4.jpg');
+  
+   /* height: 100vh; */
+
+   /* La animación puede llevar 2, 3, 4 o 5 parámetros:
+   1. El nombre asignado al @keyframes
+   2. Y el tiempo de la animación 
+   3. La velocidad de la transición (ease, linear, etc)
+   4. Un delete q retrase la animación y no cuando cargué la página
+   5. valor infinite, ,para que no pare la animación */
+   animation: miAnimacion 24s 0s infinite;
+}
