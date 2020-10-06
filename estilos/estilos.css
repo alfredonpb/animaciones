@@ -53,10 +53,8 @@ MiAnimacion es el nombre q yo asigno */
    height: 250px;
    background-size: cover;
    background-repeat: no-repeat;
-   background:url('../img/4.jpg');
-  
+   background:url('../img/4.jpg');  
    /* height: 100vh; */
-
    /* La animación puede llevar 2, 3, 4 o 5 parámetros:
    1. El nombre asignado al @keyframes
    2. Y el tiempo de la animación 
@@ -64,4 +62,69 @@ MiAnimacion es el nombre q yo asigno */
    4. Un delete q retrase la animación y no cuando cargué la página
    5. valor infinite, ,para que no pare la animación */
    animation: miAnimacion 24s 0s infinite;
+}
+
+
+@keyframes foto5{
+   0%{opacity: 0;}
+   50%{opacity: 1;}
+   100%{opacity: 0;}
+}
+#foto5{
+   position: relative;
+   margin: auto;
+   width: 300px;
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/logo1.png');      
+   animation: foto5 10s 0s infinite;
+}
+
+@keyframes foto6{
+   0%{opacity: 1;}
+   50%{opacity: 0;}
+   100%{opacity: 1;}
+} 
+#foto6{
+   position: relative;
+   margin: auto;
+   width: 300px;   
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/logo2.png');     
+   animation: foto6 20s 0s infinite;
+}
+
+@keyframes foto7{
+   0%{opacity: 0;}
+   50%{opacity: 1;}
+   100%{opacity: 0;}
+}
+#foto7{
+   position: relative;
+   margin: auto;
+   width: 300px;
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/logo3.png');      
+   animation: foto5 10s 0s infinite;
+}
+
+@keyframes foto8{
+   0%{opacity: 1;}
+   50%{opacity: 0;}
+   100%{opacity: 1;}
+} 
+#foto8{
+   position: relative;
+   margin: auto;
+   width: 300px;   
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background:url('../img/logo4.png');     
+   animation: foto6 10s 0s infinite;
 }
